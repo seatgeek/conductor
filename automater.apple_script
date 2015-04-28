@@ -1,0 +1,1 @@
+tell application "Terminal"	activate	set currentTab to do script ("cd PATH_TO_REPO")	do script ("python run.py") in currentTabend tell

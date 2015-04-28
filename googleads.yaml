@@ -1,0 +1,7 @@
+adwords:
+    developer_token: DEV_TOKEN
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+    client_id: ID
+    client_secret: SECRET
+    client_customer_id: ACCOUNT_NUMBER
+    refresh_token: REFRESH_TOKEN
