@@ -1,11 +1,4 @@
-# Conductor
-
-Conductor is a set of scripts that use data from your internal database in order to build out hourly bid modifiers for your Adwords campaigns.
-
-### What does conductor need?
-
-- Access to python (we use 2.7) and pip (to install requirements)
-- Access to a postgres database (we use redshift)
+Conductor is a script that uses data from your internal database in order to build out hourly bid modifiers for your Adwords campaigns.
 
 ### What can Conductor do?
 
@@ -32,8 +25,7 @@ Conductor is a set of scripts that use data from your internal database in order
   * If you would instead prefer to run this script on every campaign in your account. You must remove lines 29 - 33 in the `adwords_api.py` file found [here](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/adwords_api.py#LL29-33)
 8. Paste the `LabelId` into [this](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/adwords_api.py#LL32) line in the file `adwords_api.py`
 9. Set up your ROI or CPA goal in `create_bids.py` found [here](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/create_bids.py)
-10. Install the python requirements using `pip install -r requirements.txt` from the base of this repository.
-11. Run this command: `python run.py`. You should see the script operating on all desired campaigns!
+9. Run this command: `python run.py`. You should see the script operating on all desired campaigns!
 
 ### How do I automate this script to run every hour?
 
@@ -49,4 +41,7 @@ Save the script as an application.
 
 You can use Apple Calendar's "Alert" [feature](https://discussions.apple.com/docs/DOC-4082) in order to open a file...which in this case will be the application you just created. Set the file to run every hour on the hour and you're good to go.
 
-> Note from SeatGeek's friendly Neighborhood Operations Team: If the dev team can't help, ask very nicely of the ops team if they can help you run your script behind [cron](https://en.wikipedia.org/wiki/Cron). They'll stare at you funny and redact your codebase of secrets before deploying, but it's a good alternative to having your laptop be the driver behind this tool.
+
+#### Work at SeatGeek
+
+If this is how you like to solve problems you run into every day at work, then I think you'd get along great with our team. We're hiring for almost everything! Check out our [Jobs Page](https://seatgeek.com/jobs)
