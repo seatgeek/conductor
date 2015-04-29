@@ -1,4 +1,11 @@
-Conductor is a script that uses data from your internal database in order to build out hourly bid modifiers for your Adwords campaigns.
+# Conductor
+
+Conductor is a set of scripts that use data from your internal database in order to build out hourly bid modifiers for your Adwords campaigns.
+
+### What does conductor need?
+
+- Access to python (we use 2.7) and pip (to install requirements)
+- Access to a postgres database (we use redshift)
 
 ### What can Conductor do?
 
@@ -25,7 +32,8 @@ Conductor is a script that uses data from your internal database in order to bui
   * If you would instead prefer to run this script on every campaign in your account. You must remove lines 29 - 33 in the `adwords_api.py` file found [here](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/adwords_api.py#LL29-33)
 8. Paste the `LabelId` into [this](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/adwords_api.py#LL32) line in the file `adwords_api.py`
 9. Set up your ROI or CPA goal in `create_bids.py` found [here](https://github.com/seatgeek/adwords-hourly-bid-updater/blob/master/create_bids.py)
-9. Run this command: `python run.py`. You should see the script operating on all desired campaigns!
+10. Install the python requirements using `pip install -r requirements.txt` from the base of this repository.
+11. Run this command: `python run.py`. You should see the script operating on all desired campaigns!
 
 ### How do I automate this script to run every hour?
 
